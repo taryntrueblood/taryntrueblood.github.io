@@ -52,14 +52,16 @@
     border: 1px solid #1A2980;
     width: 200px;
     border-radius: 20px;
-    background: #1A2980;
+    background-color: #1A2980;
+    box-shadow: 10px 10px 5px #080808;
 }
 
 .nav-pills > li:last-child > a:hover {
     border: 1px solid #218AAD;
     padding: 10px 30px;
     border-radius: 20px;
-    background: #218AAD;
+    background-color: #218AAD;
+    box-shadow: 10px 10px 5px #080808;
 }
 
 
@@ -120,11 +122,13 @@ i{
 }
 
 .btn:hover{
-    background: #1A2980;
+    background-color: #1A2980;
     border:none;
     color: #fff;
+    box-shadow: 10px 10px 5px #080808;
 
 }
+
 
 .social_buttons{
     display: none;
