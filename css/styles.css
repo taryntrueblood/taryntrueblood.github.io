@@ -1,0 +1,500 @@
+/*************************************
+    Base Styles
+*************************************/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+  }
+
+
+ h1, h2, h3
+   {
+      text-align: center;
+      color: #fff;
+
+   }
+
+/***************************************
+   Mobile View: Navigation
+ ***************************************/
+
+
+
+.main-nav {
+    display: flex;
+    position: relative;
+    bottom: 7px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+
+ .nav {
+     list-style: none;
+     color:#fff;
+     text-shadow: 2px 2px rgba(0, 0, 0, 0.38);
+ }
+
+ .nav a{
+    text-decoration: none;
+     color: #fff;
+     padding: 10px 15px;
+ }
+
+
+
+.nav-pills > li > a:hover{
+    border: 1px solid #1A2980;
+    width: 200px;
+    border-radius: 20px;
+    background: #1A2980;
+}
+
+.nav-pills > li:last-child > a:hover {
+    border: 1px solid #218AAD;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: #218AAD;
+}
+
+
+i{
+    padding-right: 5px;
+}
+
+
+/**********************************
+    Mobile View: Jumbotron
+ **********************************/
+
+
+.jumbotron{
+    background: #1A2980; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1A2980 , #26D0CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.jumbotron .container{
+    padding-top: 24px;
+}
+
+
+
+.title h1{
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.38);
+    margin-top: 40px;
+}
+
+.title h3{
+    font-weight: 300;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.38);
+}
+
+
+/************************************
+   Mobile View: Buttons
+ ***********************************/
+
+
+.btn {
+    padding: 10px 43px;
+    border-radius: 200px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+
+}
+
+.btn:hover{
+    background: #1A2980;
+    border:none;
+    color: #fff;
+
+}
+
+.social_buttons{
+    display: none;
+}
+
+/************************************
+    Mobile View: Introduction
+ ***********************************/
+
+.introduction{
+    height: 100vh;
+}
+
+
+.introduction_container{
+  display: flex;
+  flex-direction: column-reverse;
+  padding-bottom: 10%;
+}
+
+.introduction_title{
+    font-weight: 300;
+    font-size: 48px;
+    color: #1A2980;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.38);
+    padding-bottom: 20px;
+}
+
+.intro_paragraph{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.intro_image{
+    align-self: center;
+    width: 85%;
+}
+
+
+/**************************************
+    Mobile View: Portfolio
+**************************************/
+
+#portfolio {
+    font-weight: 300;
+    font-size: 48px;
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.38);
+    padding-bottom: 62px;
+    padding-top: 40px;
+}
+
+.wrapper{
+    background: #1A2980; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1A2980 , #26D0CE); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1A2980 , #26D0CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.portfolio_container{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.thumbnail{
+    background: transparent;
+    border: none;
+    text-align: center;
+}
+
+.thumbnail a {
+    color: #fff;
+}
+
+/*************************************
+    Footer
+ ************************************/
+
+.main_footer {
+    background: #26D0CE;
+    display: flex;
+    flex-direction: column;
+    height: 50px;
+    align-content: center;
+    justify-content: center;
+}
+
+.desktop_nav{
+    display: none;
+}
+
+.mobile_nav{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.mobile_nav ul{
+    list-style: none;
+}
+
+
+/*************************************
+    Media Queries
+ ************************************/
+
+@media (max-width: 767px){
+
+    .social_buttons{
+        display: none;
+    }
+}
+
+
+@media (min-width:768px) and (max-width: 1024px){
+
+    /*********************************
+        Navigation
+    *********************************/
+
+     .main-nav{
+        position: relative;
+        bottom: 300px;
+    }
+
+     .nav.nav-pills.nav-justified{
+      position: relative;
+      top: 75px;
+    }
+
+    .main-nav li{
+        margin-left: 20px;
+    }
+
+    /*********************************
+        Jumbotron
+    *********************************/
+
+
+    .jumbotron{
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         height: 100vh;
+    }
+
+    .title{
+        margin-top: 30px;
+    }
+
+    .social_buttons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn{
+        margin-right: 15px;
+    }
+
+    /*********************************
+        Introduction
+    *********************************/
+
+
+    .introduction_container{
+      display: flex;
+      flex-direction: row;
+      padding: 2% 3%;
+      font-size: 1.125em;
+    }
+
+
+    .introduction_paragraph p{
+        font-size: 20px;
+    }
+
+    /*********************************
+        Portfolio
+    *********************************/
+
+
+    #portfolio{
+        padding-top: 30px;
+    }
+
+    .portfolio_container{
+        flex-flow: row wrap;
+        justify-content:center;
+    }
+
+    .row{
+        justify-content: center;
+    }
+
+    .thumbnail{
+        width: 300px;
+    }
+
+    .thumbnail .img-responsive{
+      opacity: 0.7;
+      transform:scale(1.03);
+    }
+
+    .thumbnail .img-responsive:hover{
+      opacity: 1;
+      transform: scale(1.15);
+      transition: transform 0.5s, opacity 0.5s;
+    }
+    .caption{
+        text-align: center;
+        padding: 0;
+    }
+
+
+
+
+    /*********************************
+       Footer
+    *********************************/
+
+
+    .main_footer,
+    .desktop_nav,
+    .desktop_nav_title,
+    .desktop_nav ul{
+        visibility: visible;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+
+    .desktop_nav ul,
+    .desktop_nav_title{
+        margin: 20px 33px;
+    }
+
+    .desktop_nav_title{
+        padding-left: 20px;
+    }
+
+    .desktop_nav li{
+        font-size: 0.875em;
+        padding-right: 10px;
+    }
+
+    .mobile_nav{
+        display: none;
+    }
+
+
+
+}
+
+@media (min-width: 1024px){
+
+    /*********************************
+        Navigation
+    *********************************/
+
+      .main-nav{
+        position: relative;
+        bottom: 296px;
+      }
+
+
+    /*********************************
+        Jumbotron
+    *********************************/
+
+      .jumbotron{
+         background-size: cover;
+         background-position: center;
+         background-attachment: fixed;
+         height: 100vh;
+      }
+
+     .social_buttons{
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn{
+        margin-right: 15px;
+    }
+
+    /*********************************
+        Introduction
+    *********************************/
+
+
+    .introduction_container{
+      display: flex;
+      flex-direction: row;
+      padding: 2% 3%;
+      font-size: 1.125em;
+    }
+
+     /*********************************
+        Portfolio
+     *********************************/
+
+    .wrapper{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .portfolio_container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .portfolio-item,
+    .thumbnail{
+        width: 300px;
+    }
+    
+    .thumbnail .img-responsive{
+      opacity: 0.7;
+      transform:scale(1.03);
+    }
+
+    .thumbnail .img-responsive:hover{
+      opacity: 1;
+      transform: scale(1.15);
+      transition: transform 0.5s, opacity 0.5s;
+    }
+
+
+    /*********************************
+        Footer
+    *********************************/
+    .mobile_nav{
+        display: none;
+    }
+
+    .main_footer,
+    .desktop_nav,
+    .desktop_nav_title,
+    .desktop_nav ul{
+        visibility: visible;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+     .desktop_nav ul,
+     .desktop_nav_title{
+        margin: 20px 33px;
+    }
+
+    .desktop_nav_title{
+        padding-left: 20px;
+    }
+
+    .desktop_nav li{
+        font-size: 0.875em;
+        padding-right: 10px;
+    }
+
+}
+
+@media (min-width: 1440px){
+    .main-nav{
+        position: relative;
+        bottom: 245px;
+      }
+}
