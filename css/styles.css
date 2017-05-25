@@ -328,14 +328,11 @@ i{
 
     .thumbnail{
         width: 300px;
+        opacity: 0.7;
+        transform:scale(1.03);
     }
 
-    .thumbnail .img-responsive{
-      opacity: 0.7;
-      transform:scale(1.03);
-    }
-
-    .thumbnail .img-responsive:hover{
+    .thumbnail:hover{
       opacity: 1;
       transform: scale(1.15);
       transition: transform 0.5s, opacity 0.5s;
