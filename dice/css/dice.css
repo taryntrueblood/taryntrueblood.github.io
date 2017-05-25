@@ -42,7 +42,7 @@
 @media (min-width: 768px){
   
     .container, 
-   . wrapper{
+    .wrapper {
         display: flex;
         flex-direction:row;
     }
