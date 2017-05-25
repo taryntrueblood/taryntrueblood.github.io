@@ -3,6 +3,14 @@ body {
     margin: 0;
 }
 
+h2{
+    text-align: center;
+}
+.search_wrapper{
+    display: flex;
+    justify-content: center;
+}
+
 input {
     width: 450px;
     padding: 20px;
@@ -23,11 +31,11 @@ input {
     max-width: 100%;
 }
 
-a {
+.list a {
     margin: 1rem 0;
 }
 
-a {
+.list a {
     display: block;
 }
 
@@ -36,7 +44,7 @@ a {
 
 
 @media (min-width: 400px) and (max-width: 599px){
-    a{
+    .list a{
         padding-left: 5rem;
     }
 
@@ -54,7 +62,7 @@ a {
         justify-content: center;
     }
 
-    a{
+    .list a{
         width: calc(34% - 2rem);
         margin: 1rem;
     }
@@ -67,7 +75,7 @@ a {
 }
 
 @media screen and (min-width: 700px), and (max-width: 900px){
-    a {
+    .list a {
         width: calc(33% - 2rem);
         margin: 1rem;
     }
@@ -77,7 +85,7 @@ a {
     }
 }
 @media screen and (min-width: 801px){
-    a{
+    .list a{
         width: calc(24% - 2rem);
     }
     input{
