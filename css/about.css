@@ -51,6 +51,7 @@ ul.skills {
     font-size: 28px;
     color: #1A2980;
     padding-bottom: 2%;
+    margin-top: 30px;
 }
 
 .panel{
@@ -79,6 +80,10 @@ ul.skills {
     font-weight: 300;
 }
 
+.profile_img{
+    margin-top: 30px;
+}
+
 
 @media (min-width:768px){
     
@@ -86,9 +91,14 @@ ul.skills {
         text-align: center;
         margin-left: 70px;
     }
+    
+    .panels{
+        display: flex;
+        
+    }
         
     .panel{
-        width: 86%;
+        width: 85%;
         border-bottom: 1px solid rgba(0, 0, 0, 0.38);
         box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.43);
         margin-top: 40px;
@@ -111,7 +121,7 @@ ul.skills {
     .profile_img{
         display: flex;
         flex-direction: column;
-        align-self: center;
+        align-self: flex-start;
         margin-left: 8%;
     }
     
