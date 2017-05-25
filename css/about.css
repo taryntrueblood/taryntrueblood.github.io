@@ -76,10 +76,6 @@ ul.skills {
 
 
 @media (min-width:768px){
-    
-    .about{
-        display: flex;
-    }
         
     .panel{
         width: 50%;
@@ -93,10 +89,6 @@ ul.skills {
         margin-top: 40px;
     }
 
-}
-
-
-    
     .container{
         display: flex;
         flex-direction: column;
