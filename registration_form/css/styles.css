@@ -1,0 +1,331 @@
+/*************************
+  General Styles
+*************************/
+
+
+*, *:before, *:after{
+  box-sizing: border-box;
+
+}
+
+body{
+  font-family: "Lato", sans-serif;
+  background-color: #fbeff1;
+}
+
+/*************************
+  header
+*************************/
+
+h1{
+  background-color:#9b2335;
+  color: #fff;
+  padding: 20px;
+  margin-top: 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+h3{
+  padding-top: 5px;
+  margin-bottom: 10px;
+  color: #9b2335;
+}
+
+section {
+  text-align: center;
+}
+section p{
+  margin: 0 10px 25px 10px;
+  font-weight: 100;
+  color: #000;
+}
+
+
+/*****************************
+  Contact form
+*****************************/
+
+form{
+  border: 0;
+  border-top: 8px double #9b2335;
+  margin: 0 10px;
+}
+
+.contact_info legend, .newsletter legend{
+  padding-bottom: 25px;
+  font-weight: 700;
+  font-size: 20px;
+  color:#9b2335;
+}
+
+fieldset{
+  border: none;
+}
+
+.newsletter{
+  border-top: 1px solid #9b2335;
+  margin-left: 5px;
+}
+
+.newsletter p,
+.newsletter label,
+.contact_info label{
+  font-weight: 100;
+  color: #000;
+}
+
+
+.newsletter p{
+  margin-top: 5px;
+}
+
+.news, .format {
+  padding-bottom: 10px;
+  height: 50px;
+}
+
+.contact_info{
+  padding-top: 35px;
+}
+.contact_info label{
+  display: block;
+  padding-bottom: 10px;
+  font-weight: 100;
+  width: 150px;
+}
+
+input,
+select,
+#zip_code,
+#topics{
+  transition: opacity .5s linear;
+  opacity: 0.4;
+}
+
+input:hover, select:hover, #zip_code:hover, #topics:hover,
+input:focus, select:focus, #zip_code:focus, #topics:focus{
+  opacity: 1;
+  border: 2px solid #9b2335;
+}
+
+input:focus, select:focus, #zip_code:focus, #topics:focus{
+  outline: none;
+}
+
+
+
+#fullName,
+#email,
+#phoneNumber,
+#address,
+#city,
+#state{
+  display: inline-block;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#zip_code{
+  display: inline-block;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  width: 120px;
+  border-radius: 5px;
+}
+
+#topics{
+  background-color: #fff;
+  width: calc(100% - 4px);
+  border-radius: 5px;
+  height: 120px;
+  margin-top: 23px;
+  border: none;
+  text-align: left;
+}
+
+.newsletter{
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+
+
+
+/****************************
+  Placeholder
+*****************************/
+
+input::-webkit-input-placeholder{
+  text-align: right;
+}
+input::-moz-placeholder{
+  text-align: right;
+}
+input::-ms-input-placeholder{
+  text-align: right;
+}
+
+
+
+
+/*************************
+  radio buttons
+*************************/
+
+input[type="radio"]{
+  display: none;
+}
+
+input[type="radio"] + label{
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+}
+
+input[type="radio"] + label:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border:2px solid #9b2335;
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked + label:after{
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #9b2335;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+/*************************
+  checkboxes
+************************/
+
+input[type="checkbox"]{
+  display: none;
+}
+
+input[type="checkbox"] + label{
+  display: block;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+  line-height: 20px;
+}
+
+input[type="checkbox"] + label:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  border: 2px solid #9b2335;
+}
+
+input[type="checkbox"]:checked + label:before{
+  content: '\2713';
+  color: #9b2335;
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  padding: 20px;
+  font-style: italic;
+  font-weight: 100;
+  color: rgba(158, 158, 158, 0.7);
+}
+
+
+
+/**************************
+  Button
+***************************/
+
+button{
+  background-color: #9b2335;
+  color: #fff;
+  width: calc(100% - 29px);
+  padding: 19px 39px 18px 39px;
+  text-align: center;
+  font-size: 18px;
+  margin: 0 15px;
+  border-radius: 5px;
+  border-width: 1px 1px 3px;
+}
+
+button:hover{
+  background-color: #4d111a;
+  color: white;
+}
+
+@media (min-width:500px) {
+  .contact_info label{
+    display: inline-block;
+  }
+  #fullName,
+  #email,
+  #phoneNumber,
+  #address,
+  #city,
+  #state{
+    display: inline-block;
+    width: calc(100% - 154px)
+  }
+}
+
+@media screen and (min-width:760px) {
+
+  hr{
+    width: calc(100% - 25%);
+  }
+
+  form,
+  .newsletter{
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .contact_info label{
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  #fullName,
+  #email,
+  #phoneNumber,
+  #address,
+  #city,
+  #state{
+    width: calc(100% - 154px)
+  }
+  input[id="fullName"],
+  input[id="email"],
+  input[id="phoneNumber"]
+  input[id="address"],
+  input[id="city"],
+  input[id="state"],
+  #topics{
+      width: 100%
+    }
+
+    button{
+      width: calc(100% - 27px );
+    }
+}
