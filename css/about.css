@@ -11,6 +11,10 @@
     flex-direction: column;
 }
 
+.about_me_title{
+    text-align: center;
+}
+
 .thumbnail{
     border: none;
     margin: 10px;
