@@ -330,6 +330,7 @@ i{
         width: 300px;
         opacity: 0.7;
         transform:scale(1.03);
+        margin-bottom: 0;
     }
 
     .thumbnail:hover{
