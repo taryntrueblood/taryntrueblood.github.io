@@ -43,9 +43,6 @@
 
 @media (min-width:768px){
     
-    .about{
-        display: flex;
-    }
     
     .main-header,
     .main-nav {

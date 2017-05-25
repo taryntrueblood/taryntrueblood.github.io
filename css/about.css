@@ -6,6 +6,11 @@
     align-items: center;
 }
 
+.about{
+    display: flex;
+    flex-direction: column;
+}
+
 .thumbnail{
     border: none;
     margin: 10px;
@@ -96,8 +101,7 @@ ul.skills {
     }
     
     .about{
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
    
     .profile_img{
