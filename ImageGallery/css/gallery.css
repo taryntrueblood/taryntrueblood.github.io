@@ -9,22 +9,22 @@ h2{
 .search_wrapper{
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding-left: 200px;
 }
 
 input {
-    width: 450px;
+    width: 800px;
     padding: 20px;
     border: 2px solid lightgrey;
     border-radius: 5px;
-    margin: 38px 256px;
+    margin: 38px 260px;
 }
 
 .gallery{
-
     margin: 0 auto;
     max-width: 1200px;
     padding: 0 1rem;
-
 }
 
 .responsive-image{
@@ -85,6 +85,10 @@ input {
     }
 }
 @media screen and (min-width: 801px){
+    .search_wrapper{
+        padding-left: 0;
+    }
+   
     .list a{
         width: calc(24% - 2rem);
     }
