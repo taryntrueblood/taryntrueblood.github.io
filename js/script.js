@@ -3,6 +3,10 @@ $(document).ready(function(){
     $('html, body').animate({scrollTop: $('#portfolio').offset().top}, 1000);
   });
 
+  $('#home_top').click(function(){
+    $('html, body').animate({scrollTop: $('#home').offset().top}, 1000);
+  });
+
   $('.title').waypoint(function(direction){
     $('.title').addClass('animated slideInLeft');
   }, {
