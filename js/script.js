@@ -1,3 +1,5 @@
 $(document).ready(function(){
-  $('#portfolio').click()
+  $('#portfolio_top').click(function(){
+    $('html, body').animate({scrollTop: $('#portfolio').offset().top}, 1000);
+  })
 });
